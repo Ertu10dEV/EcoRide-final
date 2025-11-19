@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace utilisateur - EcoRide</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="img/--logo_ECORIDE.png" alt="EcoRide logo" class="logo">
+
+    <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="covoiturage.html">Covoiturages</a>
+        <a href="publier_trajet.html">Publier un trajet</a>
+        <a href="espace-utilisateur.html">Mon espace</a>
+    </nav>
+
+    <!-- Menu burger -->
+    <div class="burger" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Accueil</a>
+        <a href="covoiturage.html">Covoiturages</a>
+        <a href="publier_trajet.html">Publier un trajet</a>
+        <a href="espace-utilisateur.html">Mon espace</a>
+    </div>
+</header>
+
+
+<section class="dashboard-container">
+    <h2 class="dashboard-title">Mon espace</h2>
+
+    <div class="dashboard-grid">
+
+        <div class="card user-info">
+            <h3>Mes informations</h3>
+            <p><strong>Nom :</strong> <span id="userName"></span></p>
+            <p><strong>Email :</strong> <span id="userEmail"></span></p>
+        </div>
+
+        <div class="card user-trajets">
+            <h3>Mes trajets publiés</h3>
+            <div id="userTrajets"></div>
+        </div>
+
+        <div class="card user-reservations">
+            <h3>Mes réservations</h3>
+            <div id="userReservations"></div>
+        </div>
+
+    </div>
+</section>
+
+<script src="js/menu.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/protect.js"></script>
+<script src="js/user_dashboard.js"></script>
+
+</body>
+</html>

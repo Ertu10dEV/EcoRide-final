@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Publier un trajet - EcoRide</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="img/--logo_ECORIDE.png" alt="EcoRide logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="covoiturage.html">Covoiturages</a></li>
+            <li><a href="login.html">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="form-container">
+    <div class="form-card">
+        <h2>Publier un trajet</h2>
+
+        <form id="trajetForm" class="auth-form">
+            <input type="text" id="ville_depart" placeholder="Ville de départ" required>
+            <input type="text" id="ville_arrivee" placeholder="Ville d'arrivée" required>
+            <input type="date" id="date_trajet" required>
+            <input type="time" id="heure_trajet" required>
+            <input type="number" id="prix" placeholder="Prix (€)" min="1" required>
+            <input type="number" id="places" placeholder="Nombre de places" min="1" required>
+
+            <button type="submit" class="btn-primary">Publier le trajet</button>
+        </form>
+    </div>
+</section>
+
+<script src="js/menu.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/trajets.js"></script>
+<script src="js/protect.js"></script>
+
+
+</body>
+</html>

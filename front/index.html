@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide - Covoiturage responable</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+    <div class="header-left">
+        <img src="img/--logo_ECORIDE.png" alt="EcoRide logo" class="logo">
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="covoiturage.html">Covoiturages</a>
+        <a href="espace-utilisateur.html">Mon espace</a>
+    </nav>
+
+    <div class="burger">
+        <span></span><span></span><span></span>
+    </div>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Accueil</a>
+        <a href="covoiturage.html">Covoiturages</a>
+        <a href="espace-utilisateur.html">Mon espace</a>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Voyagez plus vert, voyagez ensemble</h1>
+            <p>EcoRide vous aide à partager vos trajets pour réduire l'empreinte carbone.</p>
+
+            <a href="#search" class="hero-btn">Rechercher un covoiturage</a>
+        </div>
+    </section>
+
+    <section id="search" class="search-zone">
+        <form id="searchForm" class="search-form">
+            <input type="text" id="ville_depart" placeholder="Départ (ville)" required />
+            <input type="text" id="ville_arrivee" placeholder="Arrivée (ville)" required />
+            <input type="date" id="date_trajet" required />
+            <button type="submit">Rechercher</button>
+        </form>
+    </section>
+
+
+
+<footer class="footer">
+    <p>© 2025 EcoRide — Tous droits réservés</p>
+    <p>Site réalisé par <a href="https://www.d-evweb.fr" target="_blank">D-EVWeb (Ertugrul V.)</a></p>
+    <a href="#">Mentions légales</a>
+</footer>
+
+
+    <script src="js/auth.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

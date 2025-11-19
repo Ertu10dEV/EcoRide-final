@@ -1,0 +1,12 @@
+# Ne pas envoyer les fichiers sensibles
+.env
+
+# Composer
+/vendor/
+/composer.lock
+
+# Windows
+Thumbs.db
+
+# IDE
+.vscode/

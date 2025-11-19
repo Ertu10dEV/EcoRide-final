@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - EcoRide</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- HEADER MODERNE -->
+<header class="header">
+    <img src="img/--logo_ECORIDE.png" alt="EcoRide logo" class="logo">
+
+    <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="covoiturage.html">Covoiturages</a>
+        <a href="inscription.html">Inscription</a>
+    </nav>
+
+    <!-- Menu burger -->
+    <div class="burger" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Accueil</a>
+        <a href="covoiturage.html">Covoiturages</a>
+        <a href="inscription.html">Inscription</a>
+    </div>
+</header>
+
+
+<!-- FORMULAIRE DE CONNEXION -->
+<section class="form-container">
+    <div class="form-card">
+        <h2>Connexion</h2>
+
+        <form id="loginForm" class="auth-form">
+            <input type="email" id="email_login" placeholder="Email" required>
+            <input type="password" id="password_login" placeholder="Mot de passe" required>
+
+            <button type="submit" class="btn-primary">Se connecter</button>
+        </form>
+
+        <p class="form-text">
+            Pas encore de compte ?
+            <a href="inscription.html">Créer un compte</a>
+        </p>
+    </div>
+</section>
+
+
+<!-- JAVASCRIPT -->
+<script src="js/menu.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>
