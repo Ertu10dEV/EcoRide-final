@@ -1,12 +1,14 @@
-# Ne pas envoyer les fichiers sensibles
+# Ne jamais versionner vendor
+/vendor/
+
+# Ne jamais exposer les données sensibles
 .env
 
-# Composer
-/vendor/
-/composer.lock
+# Composer lock optionnel
+composer.lock
+
+# VSCode
+.vscode/
 
 # Windows
 Thumbs.db
-
-# IDE
-.vscode/
