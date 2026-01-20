@@ -12,3 +12,8 @@ composer.lock
 
 # Windows
 Thumbs.db
+
+# Config sensibles
+back/config/db.php
+back/config/config.php
+.env
